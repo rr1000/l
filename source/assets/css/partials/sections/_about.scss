@@ -1,0 +1,29 @@
+section.about{
+    @extend .cf;
+    max-width: 650px;
+    margin: 0px auto;
+    padding: 50px 20px 0px 20px;
+    h1{
+        padding: 0px 0px 30px 0px;
+        font-size: 48px;
+        color: $c_p-dark;
+        font-weight: 200;
+        text-align: center;
+    }
+    p{
+        font-size: 14px;
+        color: $c_p-gray;
+        padding: 0px 0px 30px 0px;
+        line-height: 1.5;
+        a{
+            color: $c_p;
+            text-decoration: none;
+            @include easing(350ms);
+            &:hover{
+                @include easing(350ms);
+                color: $c_p-dark;
+            }
+        }
+    }
+    img{max-width: 100%;width: 100%;height: auto;padding: 0px 0px 30px 0px;}
+}

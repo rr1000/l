@@ -1,0 +1,165 @@
+@media handheld, only screen and (max-width: 1039px){
+    .masthead{
+        position: relative;
+        .phone{
+            float: none;
+            display: none;
+        }
+        .content{
+            width: 100%;
+            float: none;
+            margin: 0px auto;
+            h1{text-align: center;}
+            h2{text-align: center;margin: auto;}
+            a.main-cta{margin: auto;}
+        }
+    }
+    .group{
+        .ill{
+            float: none;
+        }
+        .content{
+            float: none;
+            h1{text-align: center;margin: auto;}
+            p{text-align: center;margin: auto;}
+        }
+    }
+    #dnaData{
+        .ill{
+            margin: 0px auto;
+            float: none;
+            background: url('../img/ill-helix.png');
+            width: 200px;
+            height: 81px;
+            background-size: 200px 81px;
+        }
+    }
+    #vetConnection{
+        .content{float: none;margin: 0px;}
+        .ill{
+            margin: 0px auto 20px auto;
+            background: url('../img/ill-docs.png');
+            width: 200px;
+            height: 155px;
+            background-size: 200px 155px;
+        }
+    }
+    #iotConnection{
+        .content{margin: 0px 0px 0px 0px;}
+        .ill{
+            float: none;
+            margin: 0px auto;
+            background: url('../img/ill-connect.png');
+            width: 200px;
+            height: 200px;
+            background-size: 200px 200px;
+        }
+    }
+
+}
+@media handheld, only screen and (max-width: 767px){
+    section.subscribe{form{margin: 0px 0px 30px 0px;}}
+    section.about{h1{font-size: 35px;}}
+    .masthead{.content{h1{font-size: 35px;}}}
+    .final{h1{font-size: 35px;}}
+    header{
+        padding: 0px;
+        background-color: $c_p-light;
+        border-bottom: 1px solid $c_p-mid;
+        a.logo{
+            margin: 10px auto;
+            float: none;
+        }
+        nav{
+            float: none;
+            margin: 0px;
+            text-align: center;
+            border-top: 1px solid $c_p-mid;
+            a{
+                text-align: center;
+                padding: 10px;
+                &:first-of-type{
+                    border-right: 1px solid $c_p-mid;
+                    width: 46.9999%;
+                    float: left;
+                }
+            }
+            a.cta{
+                background-color: transparent;
+                @include border-radius(0px);
+                color: $c_p-gray;
+                width: 45.9999%;
+                float: right;
+                &:hover{
+                    color: $c_p;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    footer{
+        padding: 10px;
+        background-color: $c_p-light;
+        border-top: 1px solid $c_p-mid;
+        .img-w{
+            width: 80px;
+            margin: 0px auto;
+        }
+        div.footer-logo{
+            display: block;
+            background: url('../img/logo.png');
+            width: 80px;
+            height: 41px;
+            background-size: 80px 41px;
+            margin: 0px auto 10px auto;
+            float: none;
+        }
+        p{
+            margin: 0px 0px 0px 0px;
+            text-align: center;
+        }
+        a{
+            display: block;
+            float: none;
+            text-align: center;
+            padding: 0px;
+            margin: 10px 0px 0px 0px;
+        }
+        [class*='col-']:last-of-type{padding: 0px;margin:0px;}
+    }
+    .grid{
+        width: 100%;
+        min-width: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    [class*='col-']{
+        width: auto;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media handheld, only screen and (max-width: 572px){
+    header{
+        nav{
+            a.cta{width: 41.9999%;}
+        }
+    }
+}
+@media handheld, only screen and (max-width: 400px){
+    header{
+        nav{
+            a{
+                &:first-of-type{width: 37.9999%;}
+            }
+            a.cta{width: 46.9999%;}
+        }
+    }
+}

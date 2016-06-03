@@ -1,0 +1,169 @@
+body{border-top: 5px solid $c_p-dark;}
+.hr{
+    height: 2px;
+    background-color: $c_p-mid;
+    @include border-radius(5px);
+    width: 200px;
+    margin: 50px auto;
+}
+.masthead{
+    @extend .cf;
+    padding: 50px 20px 0px 20px;
+    .phone{
+        float: left;
+        background: url('../img/phone.png');
+        width: 23.1764706%;
+        height: 408px;
+        background-size: 197px 408px;
+    }
+    .content{
+        margin: 65px 0px 0px 0px;
+        padding: 0px 0px 0px 30px;
+        width: 76.8235294%;
+        float: right;
+        h1{
+            padding: 0px 0px 30px 0px;
+            font-size: 48px;
+            color: $c_p-dark;
+            font-weight: 200;
+        }
+        h2{
+            font-size: 14px;
+            color: $c_p-gray;
+            padding: 0px 0px 30px 0px;
+            max-width: 370px;
+            line-height: 1.5;
+        }
+        a.main-cta{
+            display: block;
+            padding: 15px;
+            @include border-radius(5px);
+            background-image: -webkit-linear-gradient(#88F3CC 0%, #48D687 100%);
+            background-image: -o-linear-gradient(#88F3CC 0%, #48D687 100%);
+            background-image: linear-gradient(#88F3CC 0%, #48D687 100%);
+            box-shadow: inset 0px -1px 1px 0px rgba(60,145,107,0.50);
+            color: $c_white;
+            font-size: 16px;
+            text-shadow: 0px 1px 1px rgba(47,145,83,0.55);
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            width: 200px;
+            &:hover{
+                background-image: -webkit-linear-gradient(darken(#88F3CC, 10%) 0%, darken(#48D687, 10%) 100%);
+                background-image: -o-linear-gradient(darken(#88F3CC, 10%) 0%, darken(#48D687, 10%) 100%);
+                background-image: linear-gradient(darken(#88F3CC, 10%) 0%, darken(#48D687, 10%) 100%);
+                box-shadow: inset 0px -1px 1px 0px rgba(60,145,107,0.80);
+            }
+            &:active{
+                background-image: -webkit-linear-gradient(darken(#88F3CC, 15%) 0%, darken(#48D687, 15%) 100%);
+                background-image: -o-linear-gradient(darken(#88F3CC, 15%) 0%, darken(#48D687, 15%) 100%);
+                background-image: linear-gradient(darken(#88F3CC, 15%) 0%, darken(#48D687, 15%) 100%);
+                box-shadow: inset 0px -1px 1px 0px rgba(60,145,107,0.98);
+            }
+        }
+    }
+}
+.group{
+    padding: 0px 20px;
+    .ill{
+        float: left;
+    }
+    .content{
+        float: left;
+        h1{
+            padding: 0px 0px 30px 0px;
+            font-size: 35px;
+            color: $c_p-dark;
+            font-weight: 200;
+        }
+        p{
+            font-size: 14px;
+            color: $c_p-gray;
+            padding: 0px 0px 30px 0px;
+            max-width: 370px;
+            line-height: 1.5;
+        }
+    }
+}
+#dnaData{
+    .ill{
+        margin: 8px 0px 0px 0px;
+        float: right;
+        background: url('../img/ill-helix.png');
+        width: 400px;
+        height: 161px;
+        background-size: 400px 161px;
+    }
+}
+#vetConnection{
+    .content{float: right;margin: 40px 0px 0px 0px;}
+    .ill{
+        background: url('../img/ill-docs.png');
+        width: 320px;
+        height: 248px;
+        background-size: 320px 248px;
+    }
+}
+#iotConnection{
+    .content{margin: 50px 0px 0px 0px;}
+    .ill{
+        float: right;
+        background: url('../img/ill-connect.png');
+        width: 260px;
+        height: 260px;
+        background-size: 260px 260px;
+    }
+}
+.final{
+    padding: 100px 20px;
+    margin: 50px auto 0px auto;
+    background: url('../img/final-bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h1{
+        padding: 0px 0px 30px 0px;
+        font-size: 48px;
+        color: $c_white;
+        font-weight: 200;
+        text-align: center;
+    }
+    p{
+        font-size: 14px;
+        color: $c_white;
+        padding: 0px 0px 30px 0px;
+        max-width: 500px;
+        margin: 0px auto;
+        line-height: 1.5;
+    }
+    a.cta{
+        display: block;
+        padding: 15px;
+        @include border-radius(5px);
+        background-image: -webkit-linear-gradient(#FFFFFF 0%, #E3E8F3 100%);
+        background-image: -o-linear-gradient(#FFFFFF 0%, #E3E8F3 100%);
+        background-image: linear-gradient(#FFFFFF 0%, #E3E8F3 100%);
+        box-shadow: inset 0px -1px 1px 0px rgba(197,232,217,0.50);
+        color: $c_b-dark;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        width: 200px;
+        margin: 0px auto;
+        &:hover{
+            background-image: -webkit-linear-gradient(darken(#FFFFFF, 10%) 0%, darken(#E3E8F3, 10%) 100%);
+            background-image: -o-linear-gradient(darken(#FFFFFF, 10%) 0%, darken(#E3E8F3, 10%) 100%);
+            background-image: linear-gradient(darken(#FFFFFF, 10%) 0%, darken(#E3E8F3, 10%) 100%);
+            box-shadow: inset 0px -1px 1px 0px rgba(197,232,217,0.80);
+        }
+        &:active{
+            background-image: -webkit-linear-gradient(darken(#FFFFFF, 15%) 0%, darken(#E3E8F3, 15%) 100%);
+            background-image: -o-linear-gradient(darken(#FFFFFF, 15%) 0%, darken(#E3E8F3, 15%) 100%);
+            background-image: linear-gradient(darken(#FFFFFF, 15%) 0%, darken(#E3E8F3, 15%) 100%);
+            box-shadow: inset 0px -1px 1px 0px rgba(197,232,217,0.98);
+        }
+    }
+}

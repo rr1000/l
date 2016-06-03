@@ -1,0 +1,40 @@
+section.subscribe{
+    @extend section.about;
+    form{
+        padding: 30px;
+        display: block;
+        @include border-radius(5px);
+        background: $c_white;
+        box-shadow: 0px 2px 5px 0px rgba(158,146,175,0.75);
+        .form-group{margin: 0px 0px 20px 0px;}
+        input[type="text"],
+        input[type="email"]{
+            width: 100%;
+            display: block;
+            padding: 30px 10px;
+            border: 0px;
+            font-size: 22px;
+            color: $c_p;
+            font-family: $f_sans;
+            font-weight: 300;
+            border-bottom: 1px solid $c_p-mid;
+            &:focus{border-bottom: 1px solid $c_p;}
+        }
+        button{
+            margin: 20px 0px 0px 0px;
+            background-color: $c_p-dark;
+            padding: 8px;
+            @include border-radius(5px);
+            color: $c_white;
+            border: 0px;
+            font-size: 14px;
+            font-family: $f_sans;
+            @include easing(350ms);
+            &:hover{
+                @include easing(350ms);
+                background-color: $c_p;
+            }
+        }
+        textarea:focus, input:focus{outline: none;}
+    }
+}

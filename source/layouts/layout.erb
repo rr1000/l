@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" id="helloLucy">
+    <head>
+        <meta charset="utf-8" />
+        <title><%= current_page.data.title %> - Hello Lucy!</title>
+        <meta name="description" content="By integrating with vet clinic EHRs, analyzing DNA information, connecting to IoT APIs and alloying for manual input. Lucy gives pet owners an entire 360˚ view of their furry friends. With this new information, Lucy can automatically tailor plans of care for your pet, provide insight into potential health risks, and continuously deliver actionable data to your Lucy dashboard. As a consumer product, Lucy is accessible both via the web and a mobile app. For veterinarians, Lucy can be integrated as an EHR add-on via our vet-connection program.">
+        <meta name="keywords" content="Pet Apps, Pet Tracker, Pet DNA Test, Dog DNA, Dog Tracker, Dog App, Pet Mobile App">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta property="og:description" content="By integrating with vet clinic EHRs, analyzing DNA information, connecting to IoT APIs and alloying for manual input. Lucy gives pet owners an entire 360˚ view of their furry friends. With this new information, Lucy can automatically tailor plans of care for your pet, provide insight into potential health risks, and continuously deliver actionable data to your Lucy dashboard. As a consumer product, Lucy is accessible both via the web and a mobile app. For veterinarians, Lucy can be integrated as an EHR add-on via our vet-connection program.">
+        <meta property="og:title" content="Hello Lucy!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://hellolucy.co" />
+        <meta property="og:locale" content="en_US">
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:site" content="@_hellolucy" />
+        <meta property="twitter:title" content="By integrating with vet clinic EHRs, analyzing DNA information, connecting to IoT APIs and alloying for manual input. Lucy gives pet owners an entire 360˚ view of their furry friends. With this new information, Lucy can automatically tailor plans of care for your pet, provide insight into potential health risks, and continuously deliver actionable data to your Lucy dashboard. As a consumer product, Lucy is accessible both via the web and a mobile app. For veterinarians, Lucy can be integrated as an EHR add-on via our vet-connection program." />
+        <meta property="twitter:description" content="By integrating with vet clinic EHRs, analyzing DNA information, connecting to IoT APIs and alloying for manual input. Lucy gives pet owners an entire 360˚ view of their furry friends. With this new information, Lucy can automatically tailor plans of care for your pet, provide insight into potential health risks, and continuously deliver actionable data to your Lucy dashboard. As a consumer product, Lucy is accessible both via the web and a mobile app. For veterinarians, Lucy can be integrated as an EHR add-on via our vet-connection program." />
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <!-- GA -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-73669618-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- Icons -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel='apple-touch-icon' type='image/png' href='/touchicon.png'>
+    </head>
+    <body class="<%= page_classes %>">
+        <%= partial "partials/header"%>
+        <%= yield %>
+        <%= partial "partials/footer" %>
+    </body>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+</html>
