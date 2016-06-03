@@ -9,6 +9,7 @@
             width: 100%;
             float: none;
             margin: 0px auto;
+            padding: 0px;
             h1{text-align: center;}
             h2{text-align: center;margin: auto;}
             a.main-cta{margin: auto;}
@@ -78,18 +79,15 @@
             a{
                 text-align: center;
                 padding: 10px;
-                &:first-of-type{
-                    border-right: 1px solid $c_p-mid;
-                    width: 46.9999%;
-                    float: left;
-                }
+                display: block;
+                margin: 0px;
             }
             a.cta{
                 background-color: transparent;
                 @include border-radius(0px);
                 color: $c_p-gray;
-                width: 45.9999%;
-                float: right;
+                display: block;
+                border-top: 1px solid $c_p-mid;
                 &:hover{
                     color: $c_p;
                     background-color: transparent;
@@ -146,20 +144,8 @@
         padding-right: 20px;
     }
 }
-@media handheld, only screen and (max-width: 572px){
-    header{
-        nav{
-            a.cta{width: 41.9999%;}
-        }
-    }
-}
-@media handheld, only screen and (max-width: 400px){
-    header{
-        nav{
-            a{
-                &:first-of-type{width: 37.9999%;}
-            }
-            a.cta{width: 46.9999%;}
-        }
-    }
+@media handheld, only screen and (max-width: 550px){
+    .group{.content{h1{font-size: 24px;font-weight: 400;}}}
+    .masthead{.content{h1{font-size: 24px;font-weight: 400;}}}
+    section.about{h1{font-size: 24px;font-weight: 400;}}
 }
