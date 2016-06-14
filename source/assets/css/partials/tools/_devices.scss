@@ -169,11 +169,14 @@
     }
 }
 @media handheld, only screen and (max-width: 550px){
-    .ks{font-size: 14px;}
+    .ks{font-size: 12px;.inner{img{top: -5px;}}}
     header{nav{a{font-size: 25px;padding: 15px;}a.cta{font-size: 25px;padding: 15px;}}}
     .group{.content{h1{font-size: 50px;}}}
     section.subscribe{padding: 75px 20px;.content{h1{font-size: 50px;}}}
     section.about{padding: 75px 20px;.content{h1{font-size: 50px;}}}
     .masthead{padding: 75px 20px;.content{h1{font-size: 50px;}}}
     .final{padding: 75px 20px;h1{font-size: 50px;}}
+}
+@media handheld, only screen and (max-width: 350px){
+    .ks{font-size: 12px;.inner{img{display: none;}}}
 }
