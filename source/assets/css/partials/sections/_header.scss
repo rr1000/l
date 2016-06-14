@@ -1,12 +1,53 @@
+.rel{position: relative;}
+.ks{
+    padding: 15px 20px;
+    text-align: center;
+    background-color: #2BDE73;
+    color: darken(#2BDE73, 20%);
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    .inner{
+        position: relative;
+        max-width: 328px;
+        margin: auto;
+        img{
+            position: absolute;
+            top: -1px;
+            right: 0px;
+            display: inline-block;
+            max-width: 20px;
+            height: auto;
+        }
+    }
+}
 header{
-    padding: 50px 20px;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 99;
+    .combo{
+        float: left;
+        position: relative;
+        span.beta-pill{
+            position: absolute;
+            top: 12px;
+            right: -52px;
+            background-image: -webkit-linear-gradient(#FFF93A 0%, #F5CF12 100%);
+            background-image: -o-linear-gradient(#FFF93A 0%, #F5CF12 100%);
+            background-image: linear-gradient(#FFF93A 0%, #F5CF12 100%);
+            @include border-radius(5px);
+            padding: 3px 6px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
     a.logo{
         display: block;
         background: url('../img/logo.png');
         width: 80px;
         height: 41px;
         background-size: 80px 41px;
-        float: left;
     }
     nav{
         float: right;
@@ -14,9 +55,9 @@ header{
         @extend .cf;
         a{
             display: inline-block;
-            color: $c_p-gray;
+            color: $c_p-dark;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 16px;
             margin: 0px 0px 0px 20px;
             @include easing(350ms);
             &:hover{
@@ -33,7 +74,19 @@ header{
             &:hover{
                 @include easing(350ms);
                 background-color: $c_p;
+                color: $c_white;
             }
         }
     }
+}
+.mobile-m{
+    display: none;
+    float: right;
+    background: url('../img/nav.png');
+    width: 30px;
+    height: 15px;
+    background-size: 30px 15px;
+    position: absolute;
+    top: 13px;
+    right: 0px;
 }

@@ -1,11 +1,41 @@
 section.subscribe{
-    @extend section.about;
+    @extend .cf;
+    background: url('../img/sub.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 100px 20px 100px 20px;
+    .content{
+        position: relative;
+        z-index: 99;
+        max-width: 1035px;
+        margin: auto;
+        h1{
+            padding: 0px 0px 30px 0px;
+            font-size: 120px;
+            color: $c_white;
+            font-weight: 200;
+            text-align: center;
+            span{color: $c_white;}
+        }
+        h2{
+            font-size: 18px;
+            color: $c_white;
+            padding: 0px 0px 30px 0px;
+            max-width: 470px;
+            margin: auto;
+            line-height: 1.7;
+        }
+    }
     form{
         padding: 30px;
         display: block;
+        max-width: 450px;
+        margin: auto;
         @include border-radius(5px);
         background: $c_white;
-        box-shadow: 0px 2px 5px 0px rgba(158,146,175,0.75);
+        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
         .form-group{margin: 0px 0px 20px 0px;}
         input[type="text"],
         input[type="email"]{

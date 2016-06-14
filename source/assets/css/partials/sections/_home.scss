@@ -1,4 +1,3 @@
-body{border-top: 5px solid $c_p-dark;}
 .hr{
     height: 2px;
     background-color: $c_p-mid;
@@ -8,30 +7,40 @@ body{border-top: 5px solid $c_p-dark;}
 }
 .masthead{
     @extend .cf;
-    padding: 50px 20px 0px 20px;
-    .phone{
-        float: left;
-        background: url('../img/phone.png');
-        width: 23.1764706%;
-        height: 408px;
-        background-size: 197px 408px;
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 200px 20px 200px 20px;
+    .doge{
+        max-width: 742px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: block;
+        z-index: 98;
+        img{max-width: 100%;height: auto;}
     }
     .content{
-        margin: 65px 0px 0px 0px;
-        padding: 0px 0px 0px 30px;
-        width: 76.8235294%;
-        float: right;
+        position: relative;
+        z-index: 99;
+        max-width: 1035px;
+        margin: auto;
         h1{
             padding: 0px 0px 30px 0px;
-            font-size: 48px;
-            color: $c_p-dark;
+            font-size: 120px;
+            color: $c_p-gray;
             font-weight: 200;
+            text-align: center;
+            span{color: $c_white;}
         }
         h2{
-            font-size: 14px;
+            font-size: 18px;
             color: $c_p-gray;
             padding: 0px 0px 30px 0px;
-            max-width: 450px;
+            max-width: 470px;
+            margin: auto;
             line-height: 1.7;
         }
         a.main-cta{
@@ -48,7 +57,8 @@ body{border-top: 5px solid $c_p-dark;}
             font-weight: 600;
             text-decoration: none;
             text-align: center;
-            width: 200px;
+            width: 300px;
+            margin: auto;
             &:hover{
                 background-image: -webkit-linear-gradient(darken(#88F3CC, 10%) 0%, darken(#48D687, 10%) 100%);
                 background-image: -o-linear-gradient(darken(#88F3CC, 10%) 0%, darken(#48D687, 10%) 100%);
@@ -65,7 +75,7 @@ body{border-top: 5px solid $c_p-dark;}
     }
 }
 .group{
-    padding: 0px 20px;
+    padding: 100px 20px 0px 20px;
     .ill{
         float: left;
     }
@@ -73,15 +83,15 @@ body{border-top: 5px solid $c_p-dark;}
         float: left;
         h1{
             padding: 0px 0px 30px 0px;
-            font-size: 35px;
+            font-size: 65px;
             color: $c_p-dark;
             font-weight: 200;
         }
         p{
-            font-size: 14px;
+            font-size: 22px;
             color: $c_p-gray;
             padding: 0px 0px 30px 0px;
-            max-width: 370px;
+            max-width: 420px;
             line-height: 1.5;
         }
     }
@@ -97,7 +107,7 @@ body{border-top: 5px solid $c_p-dark;}
     }
 }
 #vetConnection{
-    .content{float: right;margin: 40px 0px 0px 0px;}
+    .content{float: right;}
     .ill{
         background: url('../img/ill-docs.png');
         width: 320px;
@@ -106,7 +116,6 @@ body{border-top: 5px solid $c_p-dark;}
     }
 }
 #iotConnection{
-    .content{margin: 50px 0px 0px 0px;}
     .ill{
         float: right;
         background: url('../img/ill-connect.png');
@@ -118,23 +127,23 @@ body{border-top: 5px solid $c_p-dark;}
 .final{
     padding: 100px 20px;
     margin: 50px auto 0px auto;
-    background: url('../img/final-bg.png') no-repeat center center fixed;
+    background: url('../img/final-bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     h1{
         padding: 0px 0px 30px 0px;
-        font-size: 48px;
+        font-size: 65px;
         color: $c_white;
         font-weight: 200;
         text-align: center;
     }
     p{
-        font-size: 14px;
+        font-size: 22px;
         color: $c_white;
         padding: 0px 0px 30px 0px;
-        max-width: 500px;
+        max-width: 600px;
         margin: 0px auto;
         line-height: 1.5;
     }

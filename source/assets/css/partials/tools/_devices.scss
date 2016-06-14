@@ -56,13 +56,25 @@
             background-size: 200px 200px;
         }
     }
-
 }
-@media handheld, only screen and (max-width: 767px){
-    section.subscribe{form{margin: 0px 0px 30px 0px;}}
-    section.about{h1{font-size: 35px;}}
-    .masthead{.content{h1{font-size: 35px;}}}
-    .final{h1{font-size: 35px;}}
+@media handheld, only screen and (max-width: 790px){
+    section.subscribe{.content{h1{font-size: 65px;}}}
+    section.about{.content{h1{font-size: 65px;}}}
+    section.subscribe,
+    section.about,
+    .masthead{
+        position: relative;
+        z-index: 98;
+        .content{h1{font-size: 65px;}}
+    }
+    .final{h1{font-size: 65px;}}
+    .mobile-m{
+        display: block;
+        right: 30px;
+        top: 22px;
+        z-index: 101;
+    }
+    .rel{padding: 0px 30px;}
     header{
         padding: 0px;
         background-color: $c_p-light;
@@ -72,22 +84,34 @@
             float: none;
         }
         nav{
+            display: none;
             float: none;
             margin: 0px;
-            text-align: center;
             border-top: 1px solid $c_p-mid;
+            position: fixed;
+            z-index: 100;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 100%;
+            background-color: rgba(0,0,0,0.9);
             a{
-                text-align: center;
-                padding: 10px;
+                max-width: 70%;
+                padding: 20px;
                 display: block;
                 margin: 0px;
+                color: $c_white;
+                font-size: 30px;
+                font-weight: 200;
             }
             a.cta{
                 background-color: transparent;
                 @include border-radius(0px);
-                color: $c_p-gray;
+                color: $c_white;
                 display: block;
-                border-top: 1px solid $c_p-mid;
+                border: 0px;
+                padding: 20px;
                 &:hover{
                     color: $c_p;
                     background-color: transparent;
@@ -145,7 +169,11 @@
     }
 }
 @media handheld, only screen and (max-width: 550px){
-    .group{.content{h1{font-size: 24px;font-weight: 400;}}}
-    .masthead{.content{h1{font-size: 24px;font-weight: 400;}}}
-    section.about{h1{font-size: 24px;font-weight: 400;}}
+    .ks{font-size: 14px;}
+    header{nav{a{font-size: 25px;padding: 15px;}a.cta{font-size: 25px;padding: 15px;}}}
+    .group{.content{h1{font-size: 50px;}}}
+    section.subscribe{padding: 75px 20px;.content{h1{font-size: 50px;}}}
+    section.about{padding: 75px 20px;.content{h1{font-size: 50px;}}}
+    .masthead{padding: 75px 20px;.content{h1{font-size: 50px;}}}
+    .final{padding: 75px 20px;h1{font-size: 50px;}}
 }
